@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation & UI Feedbacks</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900">
+    <div class="my-12 text-center">
+        <h1 class="font-bold text-white text-4xl">Animation & UI Feedbacks</h1>
+        <p class="text-gray-500">Hover, click, and interact with the elements below.</p>
+    </div>
+
+    <section class="px-12">
+        <h1 class="text-white font-bold text-2xl my-5">Built-in Animations</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <div class="bg-gray-800 p-6 rounded-lg text-center">
+                <div
+                    class="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4">
+                </div>
+                <h3 class="font-semibold text-white">animate-spin</h3>
+                <p class="text-gray-400 text-sm mt-2">Loading spinner effect</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg text-center">
+                <div class="relative flex justify-center mb-4">
+                    <span class="absolute h-12 w-12 rounded-full bg-green-500 animate-ping"></span>
+                    <span class="relative h-12 w-12 rounded-full bg-green-500"></span>
+                </div>
+                <h3 class="font-semibold text-white">animate-ping</h3>
+                <p class="text-gray-400 text-sm mt-2">Notification effect</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg text-center">
+                <div class="size-15 h-12 w-12 bg-purple-600 mx-auto my-2  rounded-lg animate-pulse">
+                </div>
+                <h3 class="font-semibold text-white">animate-spin</h3>
+                <p class="text-gray-400 text-sm mt-2">Loading spinner effect</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg text-center">
+                <div class="size-13 bg-amber-500 rounded-full animate-bounce mx-auto mb-4">
+                </div>
+                <h3 class="font-semibold text-white">animate-bounce</h3>
+                <p class="text-gray-400 text-sm mt-2">Pulse Loader</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="px-12 py-10">
+        <h1 class="text-white font-bold text-2xl my-5">Button Animations</h1>
+
+        <div class="flex flex-wrap gap-6">
+            <button type="button" class="bg-blue-500 px-6 py-3 rounded-lg hover:scale-110 transition duration-300">
+                Scale Hover
+            </button>
+
+            <button type="button"
+                class="bg-purple-500 px-6 py-3 rounded-lg hover:scale-110 hover:shadow-purple-300 hover:shadow-lg transition duration-300">
+                Shadow + Scale
+            </button>
+
+            <button type="button"
+                class="bg-orange-400 hover:bg-orange-600 px-6 py-3 rounded-lg transition duration-300">
+                Color Change
+            </button>
+
+            <button type="button" class="bg-green-400 px-6 py-3 rounded-lg hover:rotate-12 transition duration-300">
+                Rotate
+            </button>
+
+            <button type="button" class="bg-pink-500 px-6 py-3 rounded-lg hover:-translate-y-5 transition duration-300">
+                Lift Effect
+            </button>
+
+            <button type="button"
+                class="bg-sky-400 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-110 hover:shadow-sky-400 hover:shadow-lg hover:bg-sky-400 hover:-translate-y-5 hover:rotate-12">
+                Combined
+            </button>
+
+        </div>
+    </section>
+
+    <section class="px-12 py-10">
+        <h1 class="text-white font-bold text-2xl my-5">Card Animations</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+
+            <div
+                class="group bg-gray-800 p-6 space-y-1 rounded-lg hover:shadow-xl hover:shadow-purple-400 hover:-translate-y-2 transition duration-300">
+                <div class="size-15 bg-blue-600 rounded-lg group-hover:scale-110 transition duration-300"></div>
+                <h1 class="font-semibold text-white">Lift & Shadow</h1>
+                <p class="text-gray-400">hover:-translate-y-2 hover:shadow-xl</p>
+            </div>
+
+            <div
+                class="group bg-gray-800 p-6 space-y-1 rounded-lg hover:scale-105 hover:bg-gray-700 transition duration-300">
+                <div class="size-15 bg-green-500 rounded-lg group-hover:rotate-12 transition duration-300"></div>
+                <h1 class="font-semibold text-white">Scale & Rotate</h1>
+                <p class="text-gray-400">hover:scale-105 group-hover:rotate-12</p>
+            </div>
+
+            <div
+                class="group bg-gray-800 p-6 space-y-1 rounded-lg hover:border-pink-500 hover:border-2 transition duration-300">
+                <div class="size-15 bg-pink-500 group-hover:translate-x-10 rounded-lg transition duration-1000"></div>
+                <h1 class="font-semibold text-white">Border Reveal</h1>
+                <p class="text-gray-400">hover:border-pink-500</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-12 py-10">
+        <h1 class="text-white font-bold text-2xl my-5">Notification Badge</h1>
+
+        <div class="flex gap-20 text-5xl">
+
+            <div class="relative bg-gray-800 rounded-lg p-3">
+                <div>
+                    🔔
+                    <span class="absolute -top-2 -right-2 flex h-5 w-5">
+                        <span class="absolute h-full w-full rounded-full bg-red-400 animate-ping"></span>
+                        <span
+                            class="relative bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center"></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="relative bg-gray-800 rounded-lg p-3">
+                <div>
+                    💬
+                    <span class="absolute -top-2 -right-2 flex h-5 w-5">
+                        <span
+                            class="bg-green-500 text-white text-xs rounded-full animate-pulse h-5 w-5 flex items-center justify-center">3</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="relative bg-gray-800 rounded-lg p-2">
+                <div>
+                    📧
+                    <span class="absolute -top-2 -right-2 flex h-5 w-5">
+                        <span
+                            class="bg-blue-500 text-white text-xs rounded-full animate-bounce h-5 w-5 flex items-center justify-center">!</span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="px-12 py-10">
+        <h1 class="text-white font-bold text-2xl my-5">Loading States</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+
+            <div class=" bg-gray-800 p-6 space-y-2 rounded-lg">
+                <div class="h-12 w-12 bg-gray-700 rounded-lg animate-pulse transition duration-300"></div>
+                <div class="h-3 w-50 bg-gray-700 rounded-xlg animate-pulse transition duration-300"></div>
+                <div class="h-3 w-80 bg-gray-700 rounded-lg animate-pulse transition duration-300"></div>
+                <div class="h-3 w-60 bg-gray-700 rounded-lg animate-pulse transition duration-300"></div>
+                <p class="text-gray-400">Skeleton Loader</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 space-y-2 rounded-lg">
+                <button type="button"
+                    class="bg-blue-500 h-10 w-30 flex rounded-lg justify-center items-center text-white gap-2">
+                    <div
+                        class="w-5 h-5 border-3 border-blue-200 border-t-white rounded-full animate-spin transition duration-300">
+                    </div>
+                    Loading...
+                </button>
+                <p class="text-gray-400">Button with Spinner</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg text-center">
+                <div class="flex justify-center items-center space-x-2">
+                    <div class="w-4 h-4 bg-purple-600 rounded-full animate-bounce"></div>
+                    <div class="w-4 h-4 bg-purple-600 rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
+                    <div class="w-4 h-4 bg-purple-600 rounded-full animate-bounce" style="animation-delay: 0.4s;"></div>
+                </div>
+                <p class="text-gray-400">Bouncing Dots</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="px-12 py-10">
+        <h1 class="text-white font-bold text-2xl my-5">Staggered Animation (Delays)</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-semibold">
+            <div class="bg-blue-500 h-16 rounded-lg text-white flex justify-center items-center
+                opacity-0 animate-[fadeIn_1s_ease_0ms_forwards]">
+                delay-0
+            </div>
+
+            <div class="bg-purple-500 h-16 rounded-lg text-white flex justify-center items-center
+                opacity-0 animate-[fadeIn_1s_ease_150ms_forwards]">
+                delay-150
+            </div>
+
+            <div class="bg-pink-500 h-16 rounded-lg text-white flex justify-center items-center
+                opacity-0 animate-[fadeIn_1s_ease_300ms_forwards]">
+                delay-300
+            </div>
+
+            <div class="bg-orange-500 h-16 rounded-lg text-white flex justify-center items-center
+                opacity-0 animate-[fadeIn_1s_ease_500ms_forwards]">
+                delay-500
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
